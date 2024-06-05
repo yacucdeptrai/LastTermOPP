@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class QuanLyNguoiDungJDBC {
-    private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/QuanLyNguoiDung";
+    private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/QuanLyNguoiDung"; //sửa lại theo người dùng
     private static final String USER = "root";
     private static final String PASS = "1234";
 
