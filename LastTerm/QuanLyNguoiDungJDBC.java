@@ -8,6 +8,7 @@ public class QuanLyNguoiDungJDBC {
     private static final String USER = "root";
     private static final String PASS = "1234";
 
+    // kiểm tra driver | nên tạo launch riêng dẫn path đến connector
     static {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
