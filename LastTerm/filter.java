@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class filter {
     public static void main(String[] args) {
         if (args.length < 3) {
-            System.out.println("java filter <input> <output> <limit-num>");
+            System.out.println("java filter <input> <output> <limit-num>"); //print usage
             return;
         }
 
@@ -18,7 +18,7 @@ public class filter {
         try (Scanner scanner = new Scanner(new File(tepDuLieu));
              PrintWriter writer = new PrintWriter(new FileWriter(tepLuuKetQua))) {
 
-            boolean first = true;  // Để kiểm tra xem có cần in dấu cách trước số hay không
+            boolean first = true;  // kiểm tra space
             while (scanner.hasNextInt()) {
                 int so = scanner.nextInt();
                 if (so < limit) {
@@ -26,7 +26,7 @@ public class filter {
                         writer.print(" ");
                     }
                     writer.print(so);
-                    first = false;  // Đã in số đầu tiên, không còn là lần đầu nữa
+                    first = false; 
                 }
             }
 
